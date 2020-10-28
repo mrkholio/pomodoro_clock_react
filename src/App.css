@@ -1,38 +1,62 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6F1E51;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trispace', sans-serif;
+  min-height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.timer-container {
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timer-container h2 {
+  margin: -50px 20px 20px;
+}
+
+.actins-wrapper span {
+  font-size: 10px;
+  margin: 0 20px;
+  width: 70px;
+}
+
+.clock-container {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.clock-container h1 {
+  margin: 0;
+}
+
+.clock-container span {
+  font-size: 55px;
 }
